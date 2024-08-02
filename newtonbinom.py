@@ -6,7 +6,7 @@ def newtonbinom(n):
 		nminusk = n-k
 		if k != 0:
 			binomcalc *= (nminusk+1)/k
-		if binomcalc != 1:
+		if int(binomcalc) > 1:
 			templist.append(f"{int(binomcalc)}")
 		if nminusk != 0:
 			templist.append(f"a{'' if nminusk == 1 else f'^{nminusk}'}")
