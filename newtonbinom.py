@@ -6,8 +6,8 @@ def newtonbinom(n):
 		nminusk = n-k
 		if k != 0:
 			binomcalc = binomcalc * (nminusk+1)//k
-		if int(binomcalc) > 1:
-			templist.append(f"{int(binomcalc)}")
+		if binomcalc > 1:
+			templist.append(f"{binomcalc}")
 		if nminusk != 0:
 			templist.append(f"a{'' if nminusk == 1 else f'^{nminusk}'}")
 		if k != 0:
